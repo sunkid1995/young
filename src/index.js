@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+// Views
+import App from './views/App';
+
+// Setup by Web Progressive App
 import * as serviceWorker from './serviceWorker';
+
+// Css
+import './index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
