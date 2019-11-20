@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 // Views
-import App from './views/App';
+import App from './containers/App';
 
 // Setup by Web Progressive App
 import * as serviceWorker from './serviceWorker';
