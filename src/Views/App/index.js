@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './App.css';
 
-// Wrapped layout
-import WrappedLayout from '../WrappedLayout';
+const INIT_STATE = {
+  name: 'Hello world',
+  age: 25,
+  city: 'Ha Noi',
+};
 
-// Render router
-import RenderRouter from '../../core/RenderRouter';
+function App() {
+  const [ state, setState ] = useState(INIT_STATE);
 
-const App = () => (
-  <WrappedLayout>
-    <RenderRouter />
-  </WrappedLayout>
-);
+  // function inputChange(key, e) {
+  //   return setState({ [key]: e.target.value });
+  // }
+
+  return (
+    <div className="App">
+      <p><span>{'Name:'}</span>{state.name}</p>
+    </div>
+  );
+}
 
 export default App;
