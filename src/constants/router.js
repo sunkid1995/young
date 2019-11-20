@@ -1,6 +1,6 @@
 import { root } from './route-constants';
 
-import Home from '../views/Home';
+import Home from '../containers/Home';
 /**
  * @description
  * Private array router
